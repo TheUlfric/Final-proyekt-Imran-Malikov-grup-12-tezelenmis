@@ -1,0 +1,48 @@
+.card img{
+    margin: auto;
+    object-fit: cover;
+    width: 100px;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin-top: 20px;
+}
+main{
+    padding-inline: 2%;
+}
+.modal-left img{
+    margin: auto;
+    padding-inline: 40%;
+    margin-bottom: 10px;
+}
+.modal-right li{
+    width: 400px;
+}
+.sideBar{
+    padding: 4px;
+    width: 300px;
+    height: 100vh;
+
+
+}
+.sideBar .inner{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width: 300px;
+    height: 400vh;
+    background-color: white;
+
+    border-radius: 5px;
+}
+.mainInner{
+    display: flex;
+}
+.cards{
+    padding: 80px;
+justify-content: space-between;
+}
+.active{
+    color: blue;
+}
+.Img{
+    margin-top: 80px;
+}

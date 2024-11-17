@@ -1,0 +1,46 @@
+.buttons{
+    margin-top: 20px;
+
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 15px;
+}
+main{
+    padding-inline: 1%;
+    bottom: 1px gray solid;
+}
+h1{
+    margin-top: 17px;
+}
+.IstifadeciYoxlamaq{
+border-bottom: 1px solid gray;
+padding: 15px;
+margin-bottom: 20px;
+}
+.carousel-item img{
+    display: block;
+    width: 70px;
+    height: 470px;
+    border-radius: 5px;
+padding-inline: 20%;
+}
+
+.texts{
+    color: red;
+    margin-top: 30px;
+}
+
+.carousel-control-prev{
+    width: 30px;
+    height: 480px;
+    background-color: coral;
+}
+.carousel-control-next{
+    width: 30px;
+    height: 480px;
+    background-color: coral;
+}
+
+main{
+    padding-inline: 20%;
+}

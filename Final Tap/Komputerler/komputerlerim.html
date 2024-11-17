@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+  <link rel="stylesheet" href="./komputerlerim.css">
+</head>
+
+<body>
+  <main>
+
+
+    <hr>
+    <a href="../EsasHisse/Esas.html"><button type="button" class=" Esas btn btn-warning">Esas Seyfe</button></a>
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Yeni Komputer
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Create Modal</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="Kategoriya" class="form-label">Kategoriya</label>
+                <select class="form-select" id="Kategoriya"   required>
+                  <option value="Dell">Dell</option>
+                  <option value="Hp">Hp</option>
+                  <option value="Acer">Acer</option>
+                  <option value="Asus">Asus</option>
+                  <option value="Apple">Apple</option>
+                  <option value="Sony">Sony</option>
+                  <option value="Msi">Msi</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="Ad" class="form-label">Ad</label>
+                <input type="text" class="form-control" id="Ad" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="Qiymet" class="form-label">Qiymet</label>
+                <div class="input-group has-validation">
+                  <input type="number" class="form-control" id="Qiymet" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="Tesvir" class="form-label">Tesvir</label>
+                <input type="text" class="form-control" id="Tesvir" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="Yeni" class="form-label">Yeni</label>
+                <select class="form-select" id="Yeni" required>
+                  <option>Beli</option>
+                  <option value="Xeyr">Xeyr</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="Sekil" class="form-label">Sekil</label>
+                <input type="text" class="form-control" id="Sekil" required>
+                <div class="img-parent">
+
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="EmeliYadas" class="form-label">Emeli Yadas (GB):</label>
+                <input type="text" class="form-control" id="EmeliYadas" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="Prosesor" class="form-label">Merkesi prosesor:</label>
+                <input type="text" class="form-control" id="Prosesor" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="DaimiYadas" class="form-label">Daimi Yadas (GB):</label>
+                <input type="text" class="form-control" id="DaimiYadas" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="DaimiYadasTipi" class="form-label">Daimi Yadas Tipi</label>
+                <select class="form-select" id="DaimiYadasTipi" required>
+                  <option>HDD</option>
+                  <option value="SSD">SSD</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="EmeliyatSistemi" class="form-label">EmeliyatSistemi:</label>
+                <input type="text" class="form-control" id="EmeliyatSistemi" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="VideoCart" class="form-label">Video Cart (GB):</label>
+                <input type="number" class="form-control" id="VideoCart" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+
+            
+
+
+
+
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Yadda Saxla</button>
+            <button type="button" class="btn btn-warning">Melumatlari Sifirla</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+    <hr>
+  </form>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>AD</th>
+        <th>Sekil</th>
+        <th>Qiymet</th>
+        <th>Emeliyatlar</th>
+      </tr>
+
+
+
+
+
+    </thead>
+    <tbody>
+
+
+
+
+
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Edit Modal -->
+<div class="modal fade modal-xl"  id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Modal</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+
+      <form class="row g-3 needs-validation editForm" novalidate>
+        <div class="col-md-6">
+          <label for="EditKategoriya" class="form-label">Kategoriya</label>
+          <select class="form-select" id="EditKategoriya" required>
+            <option value="Dell">Dell</option>
+            <option value="Hp">Hp</option>
+            <option value="Acer">Acer</option>
+            <option value="Asus">Asus</option>
+            <option value="Apple">Apple</option>
+            <option value="Sony">Sony</option>
+            <option value="Msi">Msi</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditAd" class="form-label">Ad</label>
+          <input type="text" class="form-control" id="EditAd" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditQiymet" class="form-label">Qiymet</label>
+          <div class="input-group has-validation">
+            <input type="number" class="form-control" id="EditQiymet" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditTesvir" class="form-label">Tesvir</label>
+          <input type="text" class="form-control" id="EditTesvir" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditYeni" class="form-label">Yeni</label>
+          <select class="form-select" id="EditYeni" required>
+            <option >Beli</option>
+            <option value="Xeyr">Xeyr</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditSekil" class="form-label">Sekil</label>
+          <input type="text" class="form-control" id="EditSekil" required>
+          <div class="img-parent">
+
+          </div>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditEmeliYadas" class="form-label">Emeli Yadas (GB):</label>
+          <input type="text" class="form-control" id="EditEmeliYadas" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditProsesor" class="form-label">Merkesi prosesor:</label>
+          <input type="text" class="form-control" id="EditProsesor" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditDaimiYadas" class="form-label">Daimi Yadas (GB):</label>
+          <input type="text" class="form-control" id="EditDaimiYadas" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditDaimiYadasTipi" class="form-label">Daimi Yadas Tipi</label>
+          <select class="form-select" id="EditDaimiYadasTipi" required>
+            <option value="HDD">HDD</option>
+            <option value="SSD">SSD</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditEmeliyatSistemi" class="form-label">EmeliyatSistemi:</label>
+          <input type="text" class="form-control" id="EditEmeliyatSistemi" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="EditVideoCart" class="form-label">Video Cart (GB):</label>
+          <input type="number" class="form-control" id="EditVideoCart" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+
+      
+
+
+
+
+
+
+
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Yadda Saxla</button>
+      <button type="button" class="btn Sifirla btn-warning">Melumatlari Sifirla</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    
+
+
+  </main>
+
+
+<!-- istifade -->
+<div class="modal fade istifade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      input dolu olmalidir
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade Modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+     
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="//cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./komputerlerim.js"></script>
+</body>
+
+</html>

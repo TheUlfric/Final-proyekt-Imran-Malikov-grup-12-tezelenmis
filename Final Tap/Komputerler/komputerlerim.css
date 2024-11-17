@@ -1,0 +1,47 @@
+main{
+    padding-inline: 2%;
+}
+#exampleModal input{
+    display: flex;
+justify-content: flex-start;
+}
+.ImgParent img{
+    margin-top: 20px;
+}
+.modal-footer{
+    display: flex;
+    justify-content: flex-end;
+}
+table{
+ padding: 5px;
+}
+
+#validationCustom01{
+    width: 400px;
+}
+#validationCustom02{
+    width: 400px;
+}
+#validationCustom03{
+    width: 400px;
+}
+#validationCustom04{
+    width: 400px;
+}
+#validationCustom05{
+    width: 400px;
+}
+#validationCustom06{
+    width: 400px;
+}
+.img{
+    margin-top: 10px;
+    width: 100px;
+}
+.Img{
+    width: 90px;
+}
+.img-parent{
+    margin-top: 20px;
+    width: 110px;
+}

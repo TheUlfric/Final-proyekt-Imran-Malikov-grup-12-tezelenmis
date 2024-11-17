@@ -1,0 +1,34 @@
+
+
+.formParent{ 
+    width: 400px;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.submit{
+    width: 140px;
+}
+.header{
+    margin-top: 60px;
+margin: auto;
+text-align: center;
+}
+.Esas{
+    margin-top: 20px;
+margin-bottom: 20px;
+}
+.header h1{
+    text-align: center;
+
+
+ padding: 20px;
+}
+hr{
+    margin: auto;
+ width: 360px;
+ text-align: center;
+margin-top: 10px;
+}
